@@ -1,0 +1,553 @@
+*, 
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Elements communs*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url(../images/header.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+  font-size: 1rem;
+}
+
+h2 {
+  color: #8B4513;
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+  font-size: 2rem;
+  font-family: 'Padauk', sans-serif;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  hoverflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  transition: all .2s;
+  color:  #DEB887;
+}
+a:hover {
+  text-decoration: underline;
+  color: #8B4513;
+}
+
+footer {
+  background-color: #330000;
+}
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+/*Menu*/
+
+.menu {
+  background:  linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) );
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  position: fixed;
+  width: 100%;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  margin-right: 3rem;
+}
+
+.menu-item {
+  list-style: none;
+}
+
+.menu-link {
+  color: #FFF8DC;
+  text-transform: uppercase;
+  display: block;
+  padding: .25rem 2rem;
+}
+
+.menu-link:hover {
+  color: #FFF8DC;
+  text-decoration: none;
+  border-bottom: 1px solid #FFF8DC;
+}
+
+/*Header*/
+
+.top {
+  padding: 20rem;
+}
+
+.top-title {
+  text-align: right;
+  font-size: 5rem;
+  font-style: italic;
+  color: #FFF8DC;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/*Contenu principal*/
+
+.main-container {
+   background-color: #FFF8DC;
+   padding-bottom: 2.5rem;
+}
+
+/*Types de café*/
+
+.types-cafe {
+  max-width: 75rem;
+  margin: auto;
+}
+
+.type-cafe {
+  flex-basis: 33.33%;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.type-cafe:after {
+  content:'';
+  display: inline-block;
+  width: 15%;
+  height: 1px;
+  border-top: 1px solid #A52A2A;
+}
+
+.image-type-cafe {
+  margin-bottom: 1rem;
+}
+
+.image-type-cafe:hover {
+  transform: scale(1.1);
+}
+
+.informations-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #330000;
+}
+
+.dosette {
+  width: 120%;
+}
+
+.suite {
+  display: block;
+  text-align: right;
+  padding-bottom: 1rem;
+}
+
+
+/*Origine du café*/
+
+.country {
+  flex-basis: 25%;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  border-right: 1px solid #FFF8DC;
+}
+
+.colombie {
+  background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ),url(../images/colombie.jpg)no-repeat;
+  background-size:cover;
+}
+.colombie:hover {
+  background-image: url(../images/colombie.jpg);
+}
+
+.indonesie {
+  background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ),url(../images/indonesie.jpg)no-repeat;
+  background-size:cover;
+}
+.indonesie:hover {
+  background-image: url(../images/indonesie.jpg);
+}
+
+.ethiopie {
+  background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ),url(../images/ethiopie.jpg)no-repeat;
+  background-size:cover;
+}
+.ethiopie:hover {
+  background-image: url(../images/ethiopie.jpg);
+}
+
+.bresil {
+  background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ),url(../images/bresil.jpg)no-repeat;
+  background-size:cover;
+}
+.bresil:hover {
+  background-image: url(../images/bresil.jpg);
+}
+
+.country-title {
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  color: #FFF8DC;
+}
+
+.country:hover .country-title {
+  color: #330000;
+}
+
+/*Machines*/
+.machines-cafe {
+  max-width: 75rem;
+  margin: auto;
+}
+
+.machine {
+  flex-basis: 33.33%;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.machine:after {
+  content:'';
+  display: inline-block;
+  width: 15%;
+  height: 1px;
+  border-top: 1px solid #A52A2A;
+}
+
+.image-machine {
+  margin-bottom: 1rem;
+  height: 15rem;
+  overflow: hidden;
+}
+
+.image-machine:hover {
+  transform: scale(1.1);
+}
+
+.all-machines-link {
+  display: flex;
+  justify-content: center;
+  background-color: #8B4513;
+  color: #FFF8DC;
+  border: 2px solid #8B4513;
+  width: 20rem;
+  margin: auto;
+  margin-top: 2.5rem;
+  padding: .5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.all-machines-link:hover {
+  background-color: transparent;
+  color: #8B4513;
+  border-color: #8B4513;
+}
+
+/*Effets du café*/
+
+.effets {
+  max-width: 75rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.effet {
+  flex-basis: 25%;
+}
+
+.effet-image {
+  width: 35%;
+  display: block;
+  margin: auto;
+}
+
+.informations-effet {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+/*Recettes*/
+
+.recette {
+  flex-basis: 33.33%;
+  padding-bottom: 3rem;
+  padding-top: 4rem;
+  margin-bottom: 5rem;
+}
+
+.recette-all {
+  background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ),url(../images/recettes.jpg)no-repeat;
+  background-size:cover;
+}
+
+.recette-all:hover {
+  background-image: url(../images/recettes.jpg);
+}
+
+.tiramisu {
+  background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ),url(../images/tiramisu.jpg)no-repeat;
+  background-size:cover;
+}
+
+.tiramisu:hover {
+  background-image: url(../images/tiramisu.jpg);
+}
+
+.frappe {
+  background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ),url(../images/cafe-frappe.jpg)no-repeat;
+  background-size:cover;
+}
+
+.frappe:hover {
+  background-image: url(../images/cafe-frappe.jpg);
+}
+
+.recette-title {
+  font-size: 1.8rem;
+  color: #FFF8DC;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 23rem;
+}
+
+.decouvrir {
+  display: flex;
+  justify-content: center;
+  background-color: #8B4513;
+  color: #FFF8DC;
+  border: 2px solid #8B4513;
+  width: 20rem;
+  margin: auto;
+  margin-top: 2.5rem;
+  padding: .5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.decouvrir:hover {
+  background-color: transparent;
+  color: #8B4513;
+  border-color: #8B4513;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*Footer*/
+
+.footer-content {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 75rem;
+  margin: auto;
+}
+
+.informations-author {
+  flex-basis: 35%%;
+}
+
+.author {
+  color: #fff;
+}
+
+.author-phone:hover {
+  color: #DEB887;
+}
+
+.reseaux {
+  flex-basis: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact:hover {
+  color: #DEB887;
+}
+
+.footer-content-part-two {
+  flex-basis: 35%;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.legal {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  text-align: justify;
+}
+
+.mentions {
+  color: #DEB887;
+}
+
+.confidentialite {
+  color: #DEB887;
+}
+
+.reseau {
+  content:'';
+  display: flex;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding-top: 0.3rem;
+  margin-bottom: 0.1rem;
+  border-radius: 50%;
+}
+
+.reseau:hover {
+  background-color: transparent;
+}
+
+.reseau-facebook {
+  background-color: #3b5998;
+}
+
+.reseau-twitter {
+  background-color: #33ccff;
+}
+
+.reseau-linkedin {
+  background-color: #0274b3;
+}
+
+.reseau-logo {
+  width: 1.2rem;
+  height: 1.4rem;
+}
+
+.button-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  color: #FFF8DC;
+  background-color: #8B4513;
+  border-radius: .5rem;
+}
+
+.button-top:hover {
+  background-color: #FFF8DC;
+  text-decoration: none;
+  color: #8B4513;
+  transition: background 500ms;
+}
+
+
+/*Media queries*/
+
+@media screen and (max-width: 50rem) {
+  .top {
+    padding: 10rem;
+  }
+
+  .top-title {
+    font-size: 3rem;
+  }
+
+  .origines {
+    flex-wrap: wrap;
+  }
+
+  .country {
+    flex-basis: 50%;
+    border-bottom: 1px solid #FFF8DC;
+  }
+
+  .image-machine {
+    height: 9.5rem;
+  }
+
+  .machine-grains {
+    width: 100%;
+  }
+
+  .recettes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recette {
+    margin-bottom: 0;
+  }
+
+  .button-top {
+    right: 4rem;
+  }
+
+}
+
+
+
+@media screen and (max-width: 30rem) {
+  h2 {
+    padding-top: 3rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .top {
+    padding: 4rem;
+  }
+
+  .menu {
+    position: static;
+  }
+
+  .menu-list {
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .menu-link {
+    padding: .25rem 1rem;
+  }
+
+  .image-machine {
+    height: 100%;
+  }
+
+  .effet-image {
+    padding-top: 1rem;
+  }
+
+  .footer-content {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .reseaux {
+    flex-basis: 100%;
+  }
+
+  .button-top {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
